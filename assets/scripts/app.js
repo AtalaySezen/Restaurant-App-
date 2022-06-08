@@ -6,7 +6,6 @@ let x = setInterval(function() {
 
   // Get today's date and time
   let now = new Date().getTime();
-
   let distance = countDownDate - now;
 
   let days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -19,7 +18,7 @@ let x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("counter-header").innerHTML = "Artık Sizleyiz!";
+    document.getElementById("counter-header").innerHTML = "Artık Sizlerleyiz!";
   }
 }, 1000);
 
@@ -43,3 +42,26 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+  //Random user api ile kişiler
+  const randomUser = "https://randomuser.me/api/";
+
+  const image = document.getElementById('random-image');
+  const pTag = document.getElementById('pTag');
+
+  fetch(randomUser)
+  .then(response=>response.json())
+  .then(data=>{
+    const randomUser = data.results;
+    console.log(randomUser[0])
+    image.innerHTML = `
+      <img src="${randomUser[0].picture[1]}" alt="">
+    `
+    pTag.innerHTML = `
+      <p>${randomUser[0].email}</p>
+    `
+  })
+  // .catch(e=>{
+  //   console.log("Bir Hata Oluştu", e);
+  // })
