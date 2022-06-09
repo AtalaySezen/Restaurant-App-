@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atalay`s Restaurant</title>
-    <link href="https://vjs.zencdn.net/[object Object]/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/styles/style.css">
 
 </head>
@@ -32,7 +35,7 @@
         </nav>
         <!---Hamburger menü-->
         <nav class="mobile-nav">
-        
+
             <div class="hamburger-menu" id="hamburgerButton">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -115,7 +118,7 @@
         <section class="counter restaurant-bottom restaurant-top">
             <div class="container">
                 <h1 class="counter-header" id="counter-header"></h1>
-                <h1 class="counter-header">Çok Yakında Sizlerle</h1>
+                <h1 class="counter-header" data-aos="fade-right">Çok Yakında Sizlerle</h1>
             </div>
         </section>
         <!---Sayaç Kısmı Bitiş-->
@@ -123,17 +126,17 @@
         <section class="about-us restaurant-bottom restaurant-top">
             <div class="us-content">
                 <div class="about-1">
-                <h1 class="about-header">Hakkımızda</h1>
-                <p class="about-p">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                <button class="know-more">
-                    Daha Fazlası İçin
-                </button>
+                    <h1 class="about-header" data-aos="fade-right">Hakkımızda</h1>
+                    <p class="about-p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <button class="know-more">
+                        Daha Fazlası İçin
+                    </button>
                 </div>
                 <div class="about-2">
-                    <h1 class="about-header">Tarihçemiz</h1>
+                    <h1 class="about-header" data-aos="fade-left">Tarihçemiz</h1>
                     <p class="about-p2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
                     <button class="know-more2">
                         Daha Fazlası İçin
@@ -150,77 +153,144 @@
 
                 </div>
                 <div class="believe-area">
-                    <h1 class="header-believe">
+                    <h1 class="header-believe" data-aos="fade-right">
                         What we believe in
                     </h1>
-               
-                <div class="subheader-believe">
-                    <p class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam magnam ducimus officia velit corporis modi commodi nostrum autem veritatis!</p>
+
+                    <div class="subheader-believe" data-aos="fade-left">
+                        <p class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam magnam
+                            ducimus officia velit corporis modi commodi nostrum autem veritatis!</p>
+                    </div>
+                    <div class="chef-believe">
+                        <p class="chef">Arson Gonzales</p>
+                        <span class="chef-small">Chef&Founder</span>
+                    </div>
                 </div>
-                <div class="chef-believe">
-                    <p class="chef">Arson Gonzales</p>
-                    <span class="chef-small">Chef&Founder</span>
-                </div>
-            </div>
             </div>
         </section>
-<!----5.Section---->
+        <!----5.Section---->
         <section class="customer-review restaurant-top">
             <div class="review-area">
-                <div class="content-customers">
+                <div class="content-customers" data-aos="fade-down">
                     <h1 class="happy-customers">
                         Happy Customers
                     </h1>
+                    <hr>
                 </div>
                 <div class="customers">
-                    <div class="customer-1">
-                <img src="" id="random-image" alt="">
-                <p class="customer-p"  id="pTag"></p>     
+                    <div class="customer-1 customer-padding">
+                        <img src="" id="random-image" alt="">
+                        <p class="customer-p" id="pTag"></p>
+                        <p class="comment-customer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                            inventore.</p>
                     </div>
 
-                    <div class="customer-2">
-                    <img src="" id="random2" alt="">
-                    <p class="customer-p" id="pTag2"></p>   
+                    <div class="customer-2 customer-padding">
+                        <img src="" id="random2" alt="">
+                        <p class="customer-p" id="pTag2"></p>
+                        <p class="comment-customer">Sorry for image quality :) consectetur adipisicing elit. Commodi,
+                            inventore.</p>
                     </div>
 
-                    <div class="customer-3">
+                    <div class="customer-3 customer-padding">
                         <img id="random3" src="" alt="">
                         <p id="pTag3" class="customer-p"></p>
+                        <p class="comment-customer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                            inventore.</p>
                     </div>
 
-                    <div class="customer-4">
+                    <div class="customer-4 customer-padding">
                         <img id="random4" src="" alt="">
                         <p id="pTag4" class="customer-p"></p>
+                        <p class="comment-customer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                            inventore.</p>
                     </div>
-
-
-
                 </div>
             </div>
         </section>
-        <!---Video alanı-->
-        <section class="video-sect">
-            <div class="our-video">
-                <video
-                id="my-video"
-                class="video-js"
-                controls
-                preload="auto"
-                width="640"
-                height="264"
-                poster="MY_VIDEO_POSTER.jpg"
-                data-setup="{}"
-              >
-                <source src="MY_VIDEO.mp4" type="video/mp4" />
-                <source src="MY_VIDEO.webm" type="video/webm" />
-                <p class="vjs-no-js">
-                  To view this video please enable JavaScript, and consider upgrading to a
-                  web browser that
-                  <a href="https://videojs.com/html5-video-support/" target="_blank"
-                    >supports HTML5 video</a
-                  >
-                </p>
-              </video>
+        <hr>
+        <section class="last-updates restaurant-bottom restaurant-top">
+            <div class="updates-cards">
+                <div class="card-1">
+                    <div class="card-header">
+                        <img class="card-image" src="/assets/image/card-image.png" alt="grill in the summer">
+                        <div class="image-sub">
+                            <span class="image-subcontent">16 Apr 2021</span>
+                            <span class="image-subcontent">Oscar</span>
+                        </div>
+                        <div class="card-sub">
+                            <div class="subheader-card">
+                                <div class="header-card">
+                                    <h1>
+                                        Tips for prepping and caring for your grill
+                                    </h1>
+                                </div>
+                                <div class="headercard-sub">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                                </div>
+                                <div class="more">
+                                    <span class="read-more" >Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+                <div class="card-1">
+                    <div class="card-header">
+                        <img class="card-image" src="/assets/image/card-image.png" alt="grill in the summer">
+                        <div class="image-sub">
+                            <span class="image-subcontent">16 Apr 2021</span>
+                            <span class="image-subcontent">Oscar</span>
+                        </div>
+                        <div class="card-sub">
+                            <div class="subheader-card">
+                                <div class="header-card">
+                                    <h1>
+                                        Tips for prepping and caring for your grill
+                                    </h1>
+                                </div>
+                                <div class="headercard-sub">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                                </div>
+                                <div class="more">
+                                    <span class="read-more" >Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="card-1">
+                    <div class="card-header">
+                        <img class="card-image" src="/assets/image/card-image.png" alt="grill in the summer">
+                        <div class="image-sub">
+                            <span class="image-subcontent">16 Apr 2021</span>
+                            <span class="image-subcontent">Oscar</span>
+                        </div>
+                        <div class="card-sub">
+                            <div class="subheader-card">
+                                <div class="header-card">
+                                    <h1>
+                                        Tips for prepping and caring for your grill
+                                    </h1>
+                                </div>
+                                <div class="headercard-sub">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p>
+                                </div>
+                                <div class="more">
+                                    <span class="read-more" >Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+
+
             </div>
         </section>
 
@@ -236,7 +306,7 @@
 
 
     </section>
-    <script src="https://vjs.zencdn.net/[object Object]/video.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/scripts/app.js"></script>
 </body>

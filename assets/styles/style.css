@@ -204,7 +204,7 @@ header {
     width: 70%;
 }
 
-.content-slider {
+.content-slider {   
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -331,13 +331,14 @@ header {
 /*4. Section CSS */
 
 
-.hero-believe{
+.hero-believe {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     overflow: hidden;
 }
-.believe-area{
+
+.believe-area {
     display: flex;
     flex-direction: column;
     margin-top: 6rem;
@@ -345,33 +346,37 @@ header {
     text-align: center;
     position: relative;
 }
-.believe-img img{
+
+.believe-img img {
     width: 80%;
 }
-.header-believe{
+
+.header-believe {
     margin-bottom: 2rem;
     font-size: 64px;
     font-weight: 600;
     color: #DCCA87;
 }
 
-.sub{
+.sub {
     width: 600px;
     font-size: 25px;
     color: #AAAAAA;
     text-align: left;
 }
-.chef{
+
+.chef {
     color: #DCCA87;
     font-size: 32px;
 }
 
 
-.chef-small{
+.chef-small {
     color: #ffff;
     font-size: 20px;
 }
-.chef-believe{
+
+.chef-believe {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -381,43 +386,156 @@ header {
 }
 
 /*5. SECTİON*/
-.customers{
+.customers {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 10px 7.5rem;
 }
-.happy-customers{
+
+.customers img {
+    width: 100%;
+}
+
+.happy-customers {
     font-size: 64px;
     color: #DCCA87;
     margin-bottom: 5rem;
 }
-.customer-p{
-    color: white;
-    font-size: 20px;
+
+.customer-p {
+    color: #DCCA87;
+    font-size: 25px;
+    font-weight: 600;
 }
 
+.comment-customer {
+    color: white;
+    font-weight: 500;
+}
 
+.customer-padding {
+    padding: 15px;
+}
 
+/*Update section cssleri*/
 
+.updates-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
+    flex-basis: 450px;
+}
+
+.image-sub {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 24px;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.image-subcontent {
+    color: white;
+}
+
+.card-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.subheader-card {
+    margin-bottom: 32px;
+}
+
+.header-card h1 {
+    font-size: 32px;
+    color: #DCCA87;
+    text-decoration: underline;
+    text-align: left;
+    line-height: 41.6px;
+}
+
+.headercard-sub p {
+    text-align: left;
+    font-size: 16px;
+    color: #AAAAAA;
+    line-height: 28px;
+}
+
+.more {
+    position: absolute;
+}
+
+.read-more {
+    color: #DCCA87;
+    line-height: 28px;
+}
+
+.read-more:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 1s;
+}
 
 /*Mobil CSS */
 
 @media (max-width:900px) {
     .slider-header {
-        font-size: 25px;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .text-slider {
+        padding: 0 40px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: white !important;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        width: calc(var(--swiper-navigation-size)/ 40 * 18);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color,var(--swiper-theme-color));
     }
 
     .slider-white {
-        font-size: 20px;
+        font-size: 15px;
+        padding-bottom: 2rem;
     }
 
     .wrapper {
         margin: 0 auto;
         z-index: 0;
     }
-
+    .counter{
+        margin-top: 0 !important;
+    }
     .counter-header {
         font-size: 35px;
     }
@@ -433,22 +551,55 @@ header {
         align-items: center;
         text-align: center;
     }
+
     .about-1,
     .about-2 {
         padding: 0;
     }
+
     .about-header {
         font-size: 45px;
     }
-    
+
     /*4. SECTİON */
-    .hero-believe{
+    .hero-believe {
         display: flex;
         flex-direction: column;
     }
-    .sub{
+
+    .sub {
         width: 100%;
         padding-left: 1rem;
     }
 
+    .happy-customers {
+        margin-bottom: 0;
+    }
+
+    /*5. SECTİON */
+    .customers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customers img {
+        width: 100%;
+    }
+
+    .updates-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-card h1 {
+        font-size: 20px;
+    }
+
+    .headercard-sub p {
+        font-size: 12px;
+    }
+
+    .customer-review {
+        margin-top: 0 !important;
+    }
 }
