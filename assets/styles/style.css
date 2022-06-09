@@ -380,9 +380,23 @@ header {
     top: 5rem;
 }
 
-
-
-
+/*5. SECTİON*/
+.customers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.happy-customers{
+    font-size: 64px;
+    color: #DCCA87;
+    margin-bottom: 5rem;
+}
+.customer-p{
+    color: white;
+    font-size: 20px;
+}
 
 
 

@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atalay`s Restaurant</title>
-    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link href="https://vjs.zencdn.net/[object Object]/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/styles/style.css">
+
 </head>
 
 <body>
@@ -141,7 +143,7 @@
         </section>
         <!---Üçüncü Section Bitiş Alanı-->
         <!---Dördüncü Sect Başlangıç-->
-        <section class="believe-content">
+        <section class="believe-content restaurant-top">
             <div class="hero-believe">
                 <div class="believe-img">
                     <img src="/assets/image/personImage.png" alt="What we believe">
@@ -163,12 +165,67 @@
             </div>
         </section>
 <!----5.Section---->
+        <section class="customer-review restaurant-top">
+            <div class="review-area">
+                <div class="content-customers">
+                    <h1 class="happy-customers">
+                        Happy Customers
+                    </h1>
+                </div>
+                <div class="customers">
+                    <div class="customer-1">
+                <img src="" id="random-image" alt="">
+                <p class="customer-p"  id="pTag"></p>     
+                    </div>
+
+                    <div class="customer-2">
+                    <img src="" id="random2" alt="">
+                    <p class="customer-p" id="pTag2"></p>   
+                    </div>
+
+                    <div class="customer-3">
+                        <img id="random3" src="" alt="">
+                        <p id="pTag3" class="customer-p"></p>
+                    </div>
+
+                    <div class="customer-4">
+                        <img id="random4" src="" alt="">
+                        <p id="pTag4" class="customer-p"></p>
+                    </div>
 
 
 
-        <img src="" id="random-image" alt="">
+                </div>
+            </div>
+        </section>
+        <!---Video alanı-->
+        <section class="video-sect">
+            <div class="our-video">
+                <video
+                id="my-video"
+                class="video-js"
+                controls
+                preload="auto"
+                width="640"
+                height="264"
+                poster="MY_VIDEO_POSTER.jpg"
+                data-setup="{}"
+              >
+                <source src="MY_VIDEO.mp4" type="video/mp4" />
+                <source src="MY_VIDEO.webm" type="video/webm" />
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a
+                  web browser that
+                  <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a
+                  >
+                </p>
+              </video>
+            </div>
+        </section>
 
-        <p style="color:white;" id="pTag"></p>
+
+
 
 
 
@@ -179,9 +236,7 @@
 
 
     </section>
-
-
-
+    <script src="https://vjs.zencdn.net/[object Object]/video.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/scripts/app.js"></script>
 </body>

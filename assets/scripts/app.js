@@ -45,23 +45,45 @@ var swiper = new Swiper(".mySwiper", {
 
 
   //Random user api ile kişiler
-  const randomUser = "https://randomuser.me/api/";
+  const randomUser = "https://randomuser.me/api/?results=5000";
 
   const image = document.getElementById('random-image');
+  const image2 =document.getElementById('random2');
+  const image3 = document.getElementById('random3');
+  const image4 = document.getElementById('random34');
+
+
   const pTag = document.getElementById('pTag');
+  const pTag2 = document.getElementById('pTag2');
+  const pTag3 = document.getElementById('pTag3');
+  const pTag4 = document.getElementById('pTag4');
+
 
   fetch(randomUser)
   .then(response=>response.json())
   .then(data=>{
-    const randomUser = data.results;
-    console.log(randomUser[0])
-    image.innerHTML = `
-      <img src="${randomUser[0].picture[1]}" alt="">
-    `
+    console.log(data);
+    let randomUser2 = data.results;
+    image.src = data.results[0].picture.large;
     pTag.innerHTML = `
-      <p>${randomUser[0].email}</p>
-    `
+      <p>${data.results[0].name.first} ${data.results[0].name.last}</p>
+    `;
+
+   image2.src = data.results[1].picture.large;
+   pTag2.innerHTML = `<p> ${data.results[1].name.first} ${data.results[1].name.last}</p>`;
+   
+   image3.src = data.results[2].picture.large;
+   pTag3.innerHTML = `<p> ${data.results[2].name.first} ${data.results[2].name.last}</p>`;
+
+   image4.src = data.results[3].picture.large;
+   pTag4.innerHTML = `<p> ${data.results[3].name.first} ${data.results[3].name.last}</p>`;
+
   })
-  // .catch(e=>{
-  //   console.log("Bir Hata Oluştu", e);
-  // })
+  .catch(e=>{
+    console.log("Bir hata oluştu ya da çok fazla istekte bulunduk :)", e);
+  })
+
+  
+
+
+  //
