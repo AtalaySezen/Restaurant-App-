@@ -204,7 +204,7 @@ header {
     width: 70%;
 }
 
-.content-slider {   
+.content-slider {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -359,7 +359,7 @@ header {
 }
 
 .sub {
-    width: 600px;
+    width: 500px;
     font-size: 25px;
     color: #AAAAAA;
     text-align: left;
@@ -494,9 +494,174 @@ header {
     transition: 1s;
 }
 
+.customers img {
+    width: 60%;
+    border: 10px solid #DCCA87;
+    border-radius: 100%;
+}
+
+/*Footer üst kısmı */
+.our-newsletter {
+    width: 100%;
+    background-color: transparent;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+.letter-container {
+    width: 100%;
+    height: 355px;
+    background-color: #0C0C0C;
+    position: absolute;
+    border: 1px solid white;
+    z-index: 2;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.for-news {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.letter-header {
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    color: #DCCA87;
+    margin-top: 3rem;
+}
+
+.email {
+    width: 400px;
+    height: 44px;
+    background: transparent;
+    border: 1px solid #F5EFDB;
+    color: white;
+    margin-right: 10px;
+}
+
+.subscribe-btn {
+    width: 129px;
+    height: 44px;
+    background-color: #DCCA87;
+    color: #000000;
+    text-align: center;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/*Footer area */
+.footer-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-contact {
+    font-size: 32px;
+    color: #F5EFDB;
+    line-height: 41.6px;
+    font-weight: 400;
+}
+
+.info-contact p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #AAAAAA;
+}
+
+.tel-p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #AAAAAA;
+}
+
+.hours {
+    font-size: 16px;
+    color: #AAAAAA;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+
+.info-brand {
+    font-size: 25px;
+    color: white;
+    margin: 0 8rem;
+}
+
+.social-icons {
+    padding-top: 1rem;
+}
+
+.fa-brands {
+    padding: 0 5px;
+}
+
+.date-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#year {
+    font-size: 16px;
+    font-weight: 500;
+    color: #AAAAAA;
+}
+
+.rights-reserved {
+    color: #AAAAAA;
+    font-size: 16px;
+    padding-left: 3px;
+    text-align: center;
+}
+
+
+
 /*Mobil CSS */
 
 @media (max-width:900px) {
+    .about-us {
+        height: auto;
+    }
+
+    .us-content {
+        padding-top: 0;
+    }
+
     .slider-header {
         font-size: 20px;
         width: 100%;
@@ -510,7 +675,9 @@ header {
     .swiper-button-prev {
         color: white !important;
     }
-    .swiper-button-next, .swiper-button-prev {
+
+    .swiper-button-next,
+    .swiper-button-prev {
         position: absolute;
         top: 50%;
         width: calc(var(--swiper-navigation-size)/ 40 * 18);
@@ -521,7 +688,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--swiper-navigation-color,var(--swiper-theme-color));
+        color: var(--swiper-navigation-color, var(--swiper-theme-color));
     }
 
     .slider-white {
@@ -533,9 +700,11 @@ header {
         margin: 0 auto;
         z-index: 0;
     }
-    .counter{
+
+    .counter {
         margin-top: 0 !important;
     }
+
     .counter-header {
         font-size: 35px;
     }
@@ -601,5 +770,44 @@ header {
 
     .customer-review {
         margin-top: 0 !important;
+    }
+
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .contact-column {
+        margin-bottom: 2rem;
+    }
+
+    .our-brand {
+        margin-bottom: 1rem;
+    }
+
+    .social-icons {
+        padding-top: 2rem;
+    }
+
+    .footer-area {
+        margin-bottom: 1rem;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .subscribe {
+        margin-top: 1rem;
+        padding: 0px 20px;
+    }
+
+    .info-brand {
+        font-size: 16px;
+        color: white;
+        margin: 0 4rem;
     }
 }

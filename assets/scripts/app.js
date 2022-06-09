@@ -86,5 +86,10 @@ fetch(randomUser)
     console.log("Bir hata oluştu ya da çok fazla istekte bulunduk :)", e);
   })
 
+//Şu an ki mevcut yılı alma:
+const yearInfo = new Date().getFullYear(); 
+document.getElementById('year').innerHTML = yearInfo + " Atalay";
+
+
 
 
