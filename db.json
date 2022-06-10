@@ -7,8 +7,18 @@
     },
     {
       "id": 2,
-      "title": "test",
-      "author": "typicode"
+      "Person": "test",
+      "Time": "typicode"
+    },
+    {
+      "id": "foo",
+      "title": "bar",
+      "author": 1
+    },
+    {
+      "id": 15,
+      "title": "deneme",
+      "author": "atalay"
     }
   ],
   "comments": [
@@ -16,6 +26,16 @@
       "id": 1,
       "body": "some comment",
       "postId": 1
+    },
+    {
+      "id": "foo",
+      "title": "bar",
+      "author": 1
+    },
+    {
+      "id": 15,
+      "title": "deneme",
+      "author": "atalay"
     }
   ],
   "profile": {
