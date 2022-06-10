@@ -649,6 +649,42 @@ header {
     text-align: center;
 }
 
+/*Popup */
+.popupThanks {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    width: 450px;
+    height: 300px;
+    background-color: black;
+    border: 2px solid #DCCA87;
+}
+
+.popup-header {
+    font-size: 40px;
+    color: #DCCA87;
+    padding-top: 2rem;
+}
+
+.popup-p {
+    font-size: 20px;
+    color: #DCCA87;
+    padding-top: 1rem;
+}
+
+.close-popup {
+    color: white;
+    position: relative;
+    left: 13rem;
+    top: 0.2rem;
+}
+
+.hide-popup {
+    display: none;
+}
+.navbar-logo:hover{
+    cursor: pointer;
+}
 
 
 /*Mobil CSS */
@@ -656,6 +692,7 @@ header {
 @media (max-width:900px) {
     .about-us {
         height: auto;
+        background-color: transparent !important;
     }
 
     .us-content {
@@ -810,4 +847,16 @@ header {
         color: white;
         margin: 0 4rem;
     }
+
+    .popupThanks {
+        width: 350px;
+    }
+
+    .close-popup {
+        color: white;
+        position: relative;
+        left: 10rem;
+        top: 0.2rem;
+    }
+
 }

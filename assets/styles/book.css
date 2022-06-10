@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Upright', serif;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url("/assets/image/book-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

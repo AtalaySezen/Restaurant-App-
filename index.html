@@ -18,7 +18,7 @@
 <body>
     <header>
         <nav class="nav-header">
-            <div class="navbar-logo">
+            <div class="navbar-logo" id="hrefLogo">
                 <h1>Atalay`s</h1>
             </div>
             <ul class="nav-list">
@@ -292,16 +292,24 @@
                 </div>
             </div>
         </section>
+        
         <section class="our-newsletter ">
             <div class="letter-container">
                 <h1 class="letter-header">
                     Bültenimize Üye Olun
                 </h1>
-                <p class="for-news">En güncel haberleri almak için.</p>
+                <p class="for-news" id="alert-mail">En güncel haberleri almak için.</p>
                 <div class="subscribe">
-                    <input type="text" class="email">
-                    <button class="subscribe-btn">Kayıt Ol</button>
+                    <input type="text" class="email" id="mail-input">
+                    <button id="mail-btn" class="subscribe-btn">Kayıt Ol</button>
                 </div>
+            </div>
+            <div class="popupThanks hide-popup" id="popup-thanks">
+                <i class="fa-solid fa-square-xmark close-popup" id="close-popup"></i>
+                <h1 class="popup-header">
+                    Haber bültenimize katıldığınız için teşekkürler.
+                </h1>
+                <p class="popup-p">Lütfen aktivasyon için mail adresinizi kontrol edin.</p>
             </div>
         </section>
         <footer class="footer-area restaurant-top">
@@ -353,21 +361,12 @@
             <p class="rights-reserved">Tüm Hakları Saklıdır</p>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/scripts/app.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+
 </body>
 
 </html>

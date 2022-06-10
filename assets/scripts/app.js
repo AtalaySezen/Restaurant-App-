@@ -1,13 +1,9 @@
 //Anasayfa Javascript 
-
-AOS.init();
-
-
 let countDownDate = new Date("July 10, 2022 00:00:00").getTime();
 
 let x = setInterval(function () {
-
-  // Get today's date and time
+  
+  //Bugünün tarihlerinin alınması
   let now = new Date().getTime();
   let distance = countDownDate - now;
 
@@ -49,7 +45,7 @@ var swiper = new Swiper(".mySwiper", {
 
 //Random user api ile kişiler
 const randomUser = "https://randomuser.me/api/?results=5000";
-
+//Dom elementleri
 const image = document.getElementById('random-image');
 const image2 = document.getElementById('random2');
 const image3 = document.getElementById('random3');
@@ -61,7 +57,7 @@ const pTag2 = document.getElementById('pTag2');
 const pTag3 = document.getElementById('pTag3');
 const pTag4 = document.getElementById('pTag4');
 
-
+//Fetch isteği
 fetch(randomUser)
   .then(response => response.json())
   .then(data => {
@@ -86,9 +82,41 @@ fetch(randomUser)
     console.log("Bir hata oluştu ya da çok fazla istekte bulunduk :)", e);
   })
 
-//Şu an ki mevcut yılı alma:
-const yearInfo = new Date().getFullYear(); 
-document.getElementById('year').innerHTML = yearInfo + " Atalay";
+
+
+//Kullanıcı kayıt olunca popup gösterme ve kapatma
+const subscribeBtn = document.getElementById('mail-btn');
+const popUp = document.getElementById('popup-thanks');
+const closePopup = document.getElementById('close-popup');
+
+
+//Close butonuna tıklayınca kapatır. 
+closePopup.addEventListener('click', () => {
+  popUp.classList.add('hide-popup');
+});
+
+
+//Kayıt ol input`u Mail Validasyonu: 
+
+function checkEmail() {
+  let mailInput = document.getElementById('mail-input');
+
+  let reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  let alertMail = document.getElementById('alert-mail');
+  
+  if (!reg.test(mailInput.value)) {
+    alertMail.innerHTML = "Girdiğiniz mail adresi hatalı ya da eksik."
+    setTimeout(function () { alertMail.innerHTML = "En güncel haberleri almak için." }, 5000);
+    mailInput.focus;
+    return false;
+  } else {
+    //Kayıt ol tıklayınca popup gösterilmesi;
+    popUp.classList.remove('hide-popup');
+  }
+}
+
+//Fonksiyonun çalıştıırlması
+subscribeBtn.addEventListener('click', checkEmail);
 
 
 
