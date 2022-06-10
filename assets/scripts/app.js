@@ -2,7 +2,7 @@
 let countDownDate = new Date("July 10, 2022 00:00:00").getTime();
 
 let x = setInterval(function () {
-  
+
   //Bugünün tarihlerinin alınması
   let now = new Date().getTime();
   let distance = countDownDate - now;
@@ -21,14 +21,6 @@ let x = setInterval(function () {
   }
 }, 1000);
 
-//Hamburger Menü CSS
-const hamburgerButton = document.getElementById('hamburgerButton');
-const mobileLinks = document.getElementById('mobileLinks');
-
-hamburgerButton.addEventListener('click', function showMenu() {
-  hamburgerButton.classList.toggle('change')
-  mobileLinks.classList.toggle('hide');
-})
 
 //Slider Javascripti burada
 var swiper = new Swiper(".mySwiper", {
@@ -87,13 +79,7 @@ fetch(randomUser)
 //Kullanıcı kayıt olunca popup gösterme ve kapatma
 const subscribeBtn = document.getElementById('mail-btn');
 const popUp = document.getElementById('popup-thanks');
-const closePopup = document.getElementById('close-popup');
 
-
-//Close butonuna tıklayınca kapatır. 
-closePopup.addEventListener('click', () => {
-  popUp.classList.add('hide-popup');
-});
 
 
 //Kayıt ol input`u Mail Validasyonu: 
@@ -103,7 +89,7 @@ function checkEmail() {
 
   let reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   let alertMail = document.getElementById('alert-mail');
-  
+
   if (!reg.test(mailInput.value)) {
     alertMail.innerHTML = "Girdiğiniz mail adresi hatalı ya da eksik."
     setTimeout(function () { alertMail.innerHTML = "En güncel haberleri almak için." }, 5000);

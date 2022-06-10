@@ -23,7 +23,7 @@
             <ul class="nav-list">
                 <a href="/index.html" class="nav-item">Anasayfa</a>
                 <a href="" class="nav-item">Pages</a>
-                <a href="" class="nav-item">Müzik Listemiz</a>
+                <a href="/music.html" class="nav-item">Müzik Listemiz</a>
                 <a href="" class="nav-item">Landing</a>
                 <a href="" class="nav-item">İletişim</a>
             </ul>
@@ -32,9 +32,7 @@
                 <a href="#" class="nav-item">En</a>
             </div>
         </nav>
-        <!---Hamburger menü-->
         <nav class="mobile-nav">
-
             <div class="hamburger-menu" id="hamburgerButton">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -44,17 +42,22 @@
                 <li class="mobile-items"><a href="#">Anasayfa</a></li>
                 <li class="mobile-items"><a href="#">Pages</a></li>
                 <li class="mobile-items"><a href="#">İletişim</a></li>
-                <li class="mobile-items"><a href="#">Müzik Listemiz</a></li>
+                <li class="mobile-items"><a href="/music.html">Müzik Listemiz</a></li>
                 <li class="mobile-items"><a href="#">Landing</a></li>
                 <button class="btn-mobile">Rezervasyon</button>
             </ul>
         </nav>
     </header>
     <section class="wrapper">
-        <main class="form-area">
-            <h1 class="header-form">
+        <main class="form-area ">
+            <h1 class="header-form" data-aos="fade-right">
                 En Yakın Zamanda Görüşmek Dileğiyle
             </h1>
+            <div class="popupThanks hide-popup" id="popup-thanks">
+                <i class="fa-solid fa-square-xmark close-popup" id="close-popup"></i>
+                <h1 class="popup-header" id="popup-header"></h1>
+                <p class="popup-p" id="popup-p"></p>
+            </div>
             <div class="reserv-table ">
                 <div class="name-area areas">
                     <label for="name">Adınız Ve Soyadınız:</label>
@@ -62,7 +65,7 @@
                 </div>
                 <div class="contact-area areas">
                     <label for="contact">Telefon numaranız:</label>
-                    <input type="text" id="contact-input">
+                    <input type="text" id="contact-input"  placeholder="(555) 555-5555">
                 </div>
                 <div class="mail-area areas">
                     <label for="email">E-posta adresiniz:</label>
@@ -78,7 +81,7 @@
                 </div>
                 <div class="type-area areas">
                     <label for="">Rezervasyon Türünüz:</label>
-                    <select name="" id="type-reserv">
+                    <select name="" id="type-reserv" class="type-reserv">
                         <option value="Kutlama">Kutlama</option>
                         <option value="Evlilik Teklifi">Evlilik Teklifi</option>
                         <option value="İş">İş</option>
@@ -87,19 +90,28 @@
                         <option value="Diğer">Diğer</option>
                     </select>
                 </div>
-                <button onclick="verifyForm()">Gönder</button>
+                <button class="btn-send" id="btn-send" onclick="verifyForm()">Gönder</button>
             </div>
         </main>
-
     </section>
-
-    <div class="date-info">
-        <p id="year"></p>
-        <p class="rights-reserved">Tüm Hakları Saklıdır</p>
-    </div>
-
-
-    
+    <footer>
+        <div class="footer-first">
+            <div class="info-brand">
+                <p class="brand-info">
+                    "The best way to find yourself is to lose yourself in the service of others.”
+                </p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="date-info">
+                <p id="year"></p>
+                <p class="rights-reserved">Tüm Hakları Saklıdır</p>
+            </div>
+        </div>
+    </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/scripts/book.js"></script>
