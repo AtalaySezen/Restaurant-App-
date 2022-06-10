@@ -66,15 +66,15 @@
                 </div>
                 <div class="mail-area areas">
                     <label for="email">E-posta adresiniz:</label>
-                    <input type="email">
+                    <input type="email" id="email">
                 </div>
                 <div class="date-area areas">
                     <label for="">Tarih Seçiniz</label>
-                    <input type="date" class="date-input">
+                    <input type="date" class="date-input" id="date-input">
                 </div>
                 <div class="time-area areas">
                     <label for="">Saat Seçiniz</label>
-                    <input type="time" class="time-input" id="">
+                    <input type="time" class="time-input" id="time-input">
                 </div>
                 <div class="type-area areas">
                     <label for="">Rezervasyon Türünüz:</label>
@@ -87,7 +87,7 @@
                         <option value="Diğer">Diğer</option>
                     </select>
                 </div>
-
+                <button onclick="verifyForm()">Gönder</button>
             </div>
         </main>
 
