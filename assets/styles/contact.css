@@ -32,7 +32,7 @@
 }
 .wrapper2{
     width: 100vw;
-    margin: 10rem auto;
+    margin: 6rem auto;
     text-align: center;
 }
 .leaflet-control-zoom-out,.leaflet-control-zoom-in{
@@ -41,4 +41,25 @@
 }
 .leaflet-control-attribution, .leaflet-control{
     display: none;
+}
+
+@media(max-width:900px){
+    #map{height: 350px;
+    width: 350px;
+    border-radius: 20px;
+    border: 3px solid #DCCA87;
+}
+    .meet-soon{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper2{
+        margin: 0 auto;
+    }
+    .meet-header{
+        padding: 0;
+    }
 }

@@ -106,4 +106,9 @@ subscribeBtn.addEventListener('click', checkEmail);
 
 
 
+//Close butonuna tıklayınca kapatır. 
+const closePopup = document.getElementById('close-popup');
 
+closePopup.addEventListener('click', () => {
+  popUp.classList.add('hide-popup');
+});

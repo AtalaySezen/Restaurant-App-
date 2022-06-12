@@ -20,9 +20,3 @@ hamburgerButton.addEventListener('click', function showMenu() {
   mobileLinks.classList.toggle('hide');
 })
 
-//Close butonuna tıklayınca kapatır. 
-const closePopup = document.getElementById('close-popup');
-
-closePopup.addEventListener('click', () => {
-  popUp.classList.add('hide-popup');
-});

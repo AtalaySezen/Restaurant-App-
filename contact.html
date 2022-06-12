@@ -12,6 +12,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/book.css">
     <link rel="stylesheet" href="./assets/styles/contact.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
         integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
@@ -27,7 +28,7 @@
             <ul class="nav-list">
                 <a href="/index.html" class="nav-item">Anasayfa</a>
                 <a href="" class="nav-item">Pages</a>
-                <a href="/music.html" class="nav-item">Müzik Listemiz</a>
+                <a href="/meal.html" class="nav-item">Yemek Listemiz</a>
                 <a href="" class="nav-item">Landing</a>
                 <a href="/contact.html" class="nav-item">İletişim</a>
             </ul>
@@ -46,7 +47,7 @@
                 <li class="mobile-items"><a href="#">Anasayfa</a></li>
                 <li class="mobile-items"><a href="#">Pages</a></li>
                 <li class="mobile-items"><a href="/contact.html">İletişim</a></li>
-                <li class="mobile-items"><a href="/music.html">Müzik Listemiz</a></li>
+                <li class="mobile-items"><a href="/music.html">Yemek Listemiz</a></li>
                 <li class="mobile-items"><a href="#">Landing</a></li>
                 <button class="btn-mobile">Rezervasyon</button>
             </ul>
@@ -56,7 +57,7 @@
         <section class="wrapper2">
             <div class="meet-soon">
                 <div class="info-meet">
-                    <h1 class="meet-header">
+                    <h1 class="meet-header" data-aos="fade-right">
                         Sizi bekliyoruz
                     </h1>
                     <div class="work-hours">
@@ -73,11 +74,31 @@
         </section>
         </section>
     </main>
+    <footer>
+        <div class="footer-first">
+            <div class="info-brand">
+                <p class="brand-info">
+                    "The best way to find yourself is to lose yourself in the service of others.”
+                </p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="date-info">
+                <p id="year"></p>
+                <p class="rights-reserved">Tüm Hakları Saklıdır</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
         integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
         crossorigin=""></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/assets/scripts/contact.js"></script>
+    <script src="/assets/scripts/main.js"></script>
 </body>
 
 </html>
