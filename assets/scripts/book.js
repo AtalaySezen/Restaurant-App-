@@ -13,11 +13,18 @@ const InputDate = document.getElementById('date-input');
 const InputTime = document.getElementById('time-input');
 const InputSelect = document.getElementById('type-reserv');
 
+//Telefon validasyonu
 document.getElementById('contact-input').addEventListener('input', function (e) {
   var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
   e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
   InputContact.val().replace(/^0+/, '+90');
 });
+
+//Time input validasyonu
+
+
+//Date input validasyonu
+
 
 
 console.log(InputTime)
@@ -30,7 +37,7 @@ function verifyForm() {
   inputs = document.getElementsByTagName("input");
   for (var i = 1, len = inputs.length; i < len; i++) {
     input = inputs[i];
-    if (!input.value||InputEmail.value.length<1||InputTime.value=="") {
+    if (!input.value || InputEmail.value.length < 1 || InputTime.value == "") {
       input.focus();
       popupHeader.innerHTML = "Lütfen Tüm Alanları Doldurunuz";
       popupPtag.innerHTML = "Teşekkür ederiz";
@@ -41,6 +48,11 @@ function verifyForm() {
       popupHeader.innerHTML = "Rezervasyon yaptırdığınız için teşekkürler.";
       popupPtag.innerHTML = "Çok yakında görüşmek üzere";
       popUp.classList.remove('hide-popup');
+      let Inputelements = document.getElementsByTagName("input");
+      for (let ii = 0; ii < Inputelements.length; ii++) {
+          Inputelements[ii].value = "";
+        
+      }
       //Datayı json server`a gönderme;
       fetch("http://localhost:3000/posts", {
         method: "POST",
@@ -70,4 +82,5 @@ const closePopup = document.getElementById('close-popup');
 
 closePopup.addEventListener('click', () => {
   popUp.classList.add('hide-popup');
+
 });

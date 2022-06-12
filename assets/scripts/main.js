@@ -20,3 +20,7 @@ hamburgerButton.addEventListener('click', function showMenu() {
   mobileLinks.classList.toggle('hide');
 })
 
+document.getElementById('btn-reserv').addEventListener('click',()=>{
+  window.location.href = "./book.html"
+})
+

@@ -1,4 +1,55 @@
-.music{
+body{
+    overflow-y: scroll !important;
+}
+.wrapper-meal{
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    height: 75vh;
+}
+.meal-header{
     font-size: 60px;
     color: #DCCA87;
+    margin-bottom: 2rem;
+    
+}
+.meal-header::first-letter{
+    text-transform: capitalize;
+}
+.search-input{
+    width: 400px;
+    height: 44px;
+    background: transparent;
+    border: 1px solid #F5EFDB;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.find-meal{
+    width: 129px;
+    height: 44px;
+    background-color: #DCCA87;
+    color: #000000;
+    text-align: center;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.fa-random{
+    color: #DCCA87;
+    font-size: 25px;
+}
+.meal-p{
+    color: white;
+}
+.meal-image{
+    width:400px;
+    padding: 0 10px;
+}
+.meals{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }

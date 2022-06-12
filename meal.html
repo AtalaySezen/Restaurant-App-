@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="/assets/styles/meal.css">
     <link rel="stylesheet" href="/assets/styles/book.css">
 </head>
+
 <body>
     <header>
         <nav class="nav-header">
@@ -39,33 +41,30 @@
                 <div class="bar3"></div>
             </div>
             <ul class="mobile-links hide" id="mobileLinks">
-                <li class="mobile-items"><a href="#">Anasayfa</a></li>
+                <li class="mobile-items"><a href="./index.html">Anasayfa</a></li>
                 <li class="mobile-items"><a href="#">Pages</a></li>
                 <li class="mobile-items"><a href="/contact.html">İletişim</a></li>
                 <li class="mobile-items"><a href="/meal.html">Yemek Listemiz</a></li>
                 <li class="mobile-items"><a href="#">Landing</a></li>
-                <button class="btn-mobile">Rezervasyon</button>
+                <button class="btn-mobile" id="btn-reserv">Rezervasyon</button>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="wrapper">
-            <section class="meal-list">
-                <div class="our-recipes">
-                    
+        <section class="wrapper-meal">
+            <div class="meal-finder">
+                <h1 class="meal-header">Yemek Tariflerimiz</h1>
+                <div class="searcher">
+                    <input type="text" id="search" class="search-input">
+                    <button class="find-meal" id="find-meal">Ara</button>
+                    <i class="fas fa-random"></i>
                 </div>
-            </section>
-
-
-
-
-
-
-
-
-
-
-
+                <div id="search-results">
+                    <h1 class="meal-header" id="hide-header">Dilediğiniz bir yemek arayın, eminim ki bizde mevcuttur.</h1>
+                </div>
+                <div id="result-meals" class="meals"></div>
+                <div id="single-meal"></div>
+            </div>
         </section>
     </main>
 
@@ -96,4 +95,5 @@
     <script src="./assets/scripts/meal.js"></script>
     <script src="/assets/scripts/main.js"></script>
 </body>
+
 </html>

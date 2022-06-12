@@ -407,13 +407,15 @@ header {
 
 .customer-p {
     color: #DCCA87;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
 }
 
 .comment-customer {
     color: white;
     font-weight: 500;
+    font-size: 18px;
+    font-style: italic;
 }
 
 .customer-padding {
@@ -682,7 +684,8 @@ header {
 .hide-popup {
     display: none;
 }
-.navbar-logo:hover{
+
+.navbar-logo:hover {
     cursor: pointer;
 }
 
@@ -692,7 +695,7 @@ header {
 @media (max-width:900px) {
     .about-us {
         height: auto;
-        background-color: transparent !important;
+        background-image: none !important;
     }
 
     .us-content {
@@ -705,7 +708,7 @@ header {
     }
 
     .text-slider {
-        padding: 0 40px;
+        padding: 0 2px;
     }
 
     .swiper-button-next,
@@ -831,6 +834,7 @@ header {
 
     .footer-area {
         margin-bottom: 1rem;
+        margin-top: 8rem !important;
     }
 
     .email {
@@ -859,4 +863,30 @@ header {
         top: 0.2rem;
     }
 
+    .card-1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 12px;
+        flex-basis: 450px;
+        padding: 5px;
+    }
+    h1{
+        font-size: 40px !important;
+    }
+    .restaurant-bottom{
+        margin-bottom: 5rem;
+    }
+    .restaurant-top{
+        margin-top: 5rem;
+    }
+
+
+}
+
+
+.know-more,
+.know-more2,
+i,
+button {
+    cursor: pointer;
 }
