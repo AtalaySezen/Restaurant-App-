@@ -58,8 +58,7 @@ function verifyForm() {
       })
         .then(response => response.json())
         .then(json => console.log(json));
-
+      break  //Break ile birden fazla post gönderme sorunu çözülüyor.
     }
-    return false;
   }
 }

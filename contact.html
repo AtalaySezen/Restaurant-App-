@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="shortcut icon" href="/assets/image/jsfavicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav-header">
+            <div class="navbar-logo" id="hrefLogo">
+                <h1>Atalay`s</h1>
+            </div>
+            <ul class="nav-list">
+                <a href="/index.html" class="nav-item">Anasayfa</a>
+                <a href="" class="nav-item">Pages</a>
+                <a href="/music.html" class="nav-item">Müzik Listemiz</a>
+                <a href="" class="nav-item">Landing</a>
+                <a href="/contact.html" class="nav-item">İletişim</a>
+            </ul>
+            <div class="nav-right">
+                <a href="/book.html" class="nav-item">Rezervasyon</a>
+                <a href="#" class="nav-item">En</a>
+            </div>
+        </nav>
+        <nav class="mobile-nav">
+            <div class="hamburger-menu" id="hamburgerButton">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="mobile-links hide" id="mobileLinks">
+                <li class="mobile-items"><a href="#">Anasayfa</a></li>
+                <li class="mobile-items"><a href="#">Pages</a></li>
+                <li class="mobile-items"><a href="/contact.html">İletişim</a></li>
+                <li class="mobile-items"><a href="/music.html">Müzik Listemiz</a></li>
+                <li class="mobile-items"><a href="#">Landing</a></li>
+                <button class="btn-mobile">Rezervasyon</button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="wrapper2">
+            <div class="meet-soon">
+                <div class="info-meet">
+                    <h1 class="meet-header">
+                        Sizi bekliyoruz
+                    </h1>
+                    <div class="work-hours">
+                        <p class="work">Pazartesi-Cuma</p>
+                        <p class="work">08:00-24:00</p>
+                        <p class="work">Cumartesi-Pazar</p>
+                        <p class="work">07:00-23:00</p>
+                    </div>
+                </div>
+                <div class="maps-area">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </section>
+        </section>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/scripts/contact.js"></script>
+</body>
+
+</html>
