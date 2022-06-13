@@ -218,6 +218,15 @@ header {
     font-size: 25px;
     padding-bottom: 3rem;
 }
+.nav-item:hover{
+    text-decoration: underline;
+    transition: 1s;
+    color: #DCCA87;
+}
+i:hover{
+    transition: 1s;
+    color: #DCCA87;
+}
 
 /*Anasayfa */
 .wrapper {
@@ -237,8 +246,8 @@ header {
 
 .counter-header {
     font-weight: 500;
-    font-size: 70px;
-    color: white;
+    font-size: 64px;
+    color: #DCCA87;
     letter-spacing: 0.1em;
 }
 
@@ -410,6 +419,10 @@ header {
     font-size: 35px;
     font-weight: 600;
 }
+.image-2{
+    border: 5px solid #DCCA87;
+    margin: 15px 0;
+}
 
 .comment-customer {
     color: white;
@@ -434,7 +447,7 @@ header {
 .card-1 {
     display: flex;
     flex-direction: column;
-    margin: 0 70px;
+    margin: 0 10px;
     flex-basis: 450px;
 }
 

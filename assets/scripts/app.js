@@ -81,7 +81,6 @@ const subscribeBtn = document.getElementById('mail-btn');
 const popUp = document.getElementById('popup-thanks');
 
 
-
 //Kayıt ol input`u Mail Validasyonu: 
 
 function checkEmail() {

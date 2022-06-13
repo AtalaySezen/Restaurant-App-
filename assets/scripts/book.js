@@ -27,6 +27,7 @@ document.getElementById('contact-input').addEventListener('input', function (e) 
 
 
 
+
 console.log(InputTime)
 
 const popUp = document.getElementById('popup-thanks');
@@ -74,8 +75,6 @@ function verifyForm() {
     }
   }
 }
-
-
 
 //Close butonuna tıklayınca kapatır. 
 const closePopup = document.getElementById('close-popup');
