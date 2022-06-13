@@ -1,22 +1,26 @@
-body{
+body {
     overflow-y: scroll !important;
 }
-.wrapper-meal{
+
+.wrapper-meal {
     width: 100vw;
     margin: 0 auto;
     text-align: center;
     height: 75vh;
 }
-.meal-header{
+
+.meal-header {
     font-size: 60px;
     color: #DCCA87;
     margin-bottom: 2rem;
-    
+
 }
-.meal-header::first-letter{
+
+.meal-header::first-letter {
     text-transform: capitalize;
 }
-.search-input{
+
+.search-input {
     width: 400px;
     height: 44px;
     background: transparent;
@@ -25,7 +29,8 @@ body{
     margin-right: 10px;
     margin-bottom: 10px;
 }
-.find-meal{
+
+.find-meal {
     width: 129px;
     height: 44px;
     background-color: #DCCA87;
@@ -35,18 +40,22 @@ body{
     font-size: 14px;
     font-weight: 600;
 }
-.fa-random{
+
+.fa-random {
     color: #DCCA87;
     font-size: 25px;
 }
-.meal-p{
+
+.meal-p {
     color: white;
 }
-.meal-image{
-    width:400px;
+
+.meal-image {
+    width: 400px;
     padding: 0 10px;
 }
-.meals{
+
+.meals {
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -218,12 +218,14 @@ header {
     font-size: 25px;
     padding-bottom: 3rem;
 }
-.nav-item:hover{
+
+.nav-item:hover {
     text-decoration: underline;
     transition: 1s;
     color: #DCCA87;
 }
-i:hover{
+
+i:hover {
     transition: 1s;
     color: #DCCA87;
 }
@@ -419,7 +421,8 @@ i:hover{
     font-size: 35px;
     font-weight: 600;
 }
-.image-2{
+
+.image-2 {
     border: 5px solid #DCCA87;
     margin: 15px 0;
 }
@@ -883,13 +886,16 @@ i:hover{
         flex-basis: 450px;
         padding: 5px;
     }
-    h1{
+
+    h1 {
         font-size: 40px !important;
     }
-    .restaurant-bottom{
+
+    .restaurant-bottom {
         margin-bottom: 5rem;
     }
-    .restaurant-top{
+
+    .restaurant-top {
         margin-top: 5rem;
     }
 

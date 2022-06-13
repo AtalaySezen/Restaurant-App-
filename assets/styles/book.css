@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
 
-.wrapper{
+.wrapper {
     width: 100vw;
     margin: 0 auto;
     text-align: center;
 }
-.form-area{
+
+.form-area {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
 }
-.reserv-table{
+
+.reserv-table {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,18 +23,21 @@
     width: 450px;
     height: 60vh;
 }
-.areas{
+
+.areas {
     display: flex;
     flex-direction: column;
 }
-label{
+
+label {
     color: white;
     font-size: 16px;
     text-align: center;
     line-height: 1.4;
     font-weight: 600;
 }
-.type-reserv{
+
+.type-reserv {
     width: 213px;
     height: 30px;
     border: 0;
@@ -45,7 +50,8 @@ label{
     font-weight: 550;
     text-align: center;
 }
-input{
+
+input {
     width: 213px;
     height: 30px;
     background: transparent;
@@ -54,20 +60,24 @@ input{
     margin-right: 10px;
     text-align: center;
 }
-.time-input{
+
+.time-input {
     width: 213px !important;
     text-align: center;
 }
-.date-input{
+
+.date-input {
     width: 213px;
     text-align: center;
 }
-.header-form{
+
+.header-form {
     font-size: 60px;
     color: #DCCA87;
     padding-bottom: 2rem;
 }
-.btn-send{
+
+.btn-send {
     width: 213px;
     height: 30px;
     margin-top: 1rem;
@@ -78,18 +88,21 @@ input{
     color: black;
     border: 1px solid white;
 }
-.footer-first{
+
+.footer-first {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.social-icons{
+
+.social-icons {
     padding-bottom: 1rem;
 }
-@media(max-width:900px){
-    .header-form{
+
+@media(max-width:900px) {
+    .header-form {
         font-size: 24px;
     }
 }
