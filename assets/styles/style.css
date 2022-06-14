@@ -227,7 +227,6 @@ i:hover {
     color: #DCCA87;
 }
 
-/*Anasayfa */
 .wrapper {
     width: 100vw;
     margin: 2rem auto;
@@ -250,7 +249,6 @@ i:hover {
     letter-spacing: 0.1em;
 }
 
-/*Üçüncü Section CSSleri */
 .about-us {
     background-image: url("/assets/image/background.png");
     height: 600px;
@@ -336,9 +334,6 @@ i:hover {
     margin-bottom: 10rem;
 }
 
-/*4. Section CSS */
-
-
 .hero-believe {
     display: flex;
     flex-direction: row;
@@ -393,7 +388,6 @@ i:hover {
     top: 5rem;
 }
 
-/*5. SECTİON*/
 .customers {
     display: flex;
     flex-direction: row;
@@ -434,8 +428,6 @@ i:hover {
 .customer-padding {
     padding: 15px;
 }
-
-/*Update section cssleri*/
 
 .updates-cards {
     display: flex;
@@ -515,7 +507,6 @@ i:hover {
     border-radius: 100%;
 }
 
-/*Footer üst kısmı */
 .our-newsletter {
     width: 100%;
     background-color: transparent;
@@ -580,7 +571,6 @@ i:hover {
 }
 
 
-/*Footer area */
 .footer-area {
     display: flex;
     flex-direction: row;
@@ -669,7 +659,6 @@ i:hover {
     text-align: center;
 }
 
-/*Popup */
 .popupThanks {
     display: block;
     position: absolute;
@@ -706,10 +695,6 @@ i:hover {
 .navbar-logo:hover {
     cursor: pointer;
 }
-
-
-/*Mobil CSS */
-
 @media (max-width:900px) {
     .about-us {
         height: auto;
@@ -788,7 +773,6 @@ i:hover {
         font-size: 45px;
     }
 
-    /*4. SECTİON */
     .hero-believe {
         display: flex;
         flex-direction: column;
@@ -803,7 +787,6 @@ i:hover {
         margin-bottom: 0;
     }
 
-    /*5. SECTİON */
     .customers {
         display: flex;
         flex-direction: column;
@@ -917,7 +900,6 @@ button {
     display: inline-block;
     position: fixed;
     right: 2rem;
-    /* top: 0; */
     bottom: 4rem;
     background-color: beige;
     width: 65px;
