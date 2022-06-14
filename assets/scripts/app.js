@@ -103,11 +103,31 @@ function checkEmail() {
 //Fonksiyonun çalıştıırlması
 subscribeBtn.addEventListener('click', checkEmail);
 
-
-
 //Close butonuna tıklayınca kapatır. 
 const closePopup = document.getElementById('close-popup');
 
 closePopup.addEventListener('click', () => {
   popUp.classList.add('hide-popup');
 });
+
+const backTop = document.getElementById('back-top');
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    backTop.style.display = "block";
+  } else {
+    backTop.style.display = "none";
+  } if (window.innerWidth < 900) {
+    backTop.style.display = "none";
+  }
+}
+backTop.addEventListener('click', topFunction);
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
+console.log(window.innerWidth); 

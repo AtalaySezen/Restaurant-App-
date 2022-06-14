@@ -2,12 +2,12 @@ const customerTable = document.getElementById('customer-infos');
 
 
 fetch("./db.json")
-    .then(response => response.json())
-    .then(data => {
-        console.log(data); 
-        //Form`dan gelen db.json dosyası alındı.
-        customerTable.innerHTML = data.posts
-            .map(post => `
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    //Form`dan gelen db.json dosyası alındı.
+    customerTable.innerHTML = data.posts
+      .map(post => `
     <tbody>
     <tr>
     <th scope="col">Müşteri</th>
@@ -30,14 +30,53 @@ fetch("./db.json")
 
                 </tbody>
     `)
-            .join(''); //DB.json virgüller
-    })
+      .join(''); //DB.json virgüller
+  })
 
 
 
 //Search 
 fetch("./db.json")
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-    })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+
+
+function adminTrue() {
+  let logged = localStorage.getItem("adminLogged");
+  console.log(logged)
+
+  if (logged != "true") {
+
+    window.location.href = "index.html";
+
+  } else {
+    console.log("hata")
+  }
+}
+
+
+
+
+//Çıkış yap
+let logOut = document.getElementById('logout-btn');
+
+console.log(logOut);
+
+logOut.addEventListener('click', () => {
+  localStorage.removeItem("adminLogged");
+  window.location.href = "./loginadmin.html"
+})
+
+
+//Sayfa yüklendiği zaman gösterir
+let body = document.getElementById('body-item');
+
+//Eğer sadece giriş yapmış ise bilgiler görünecek.
+let logged = localStorage.getItem("adminLogged");
+
+if (logged == "true") {
+  body.classList.remove('hide');
+}
+

@@ -21,7 +21,7 @@ function login(e) {
     alertSuccess.classList.remove('none');
     alertSuccess.innerHTML = `Hoşgeldin ${getUsername}`
     setInterval(() => {
-    window.location.href = "./admin.html"  //Yönlendirme açmayı unutmayalım.
+      window.location.href = "./admin.html"  //Yönlendirme açmayı unutmayalım.
     }, 1000);
   } else if (userInput.value != getUsername & passwordInput.value != getPassword) {
     alertMessage.classList.remove('none');
@@ -30,23 +30,25 @@ function login(e) {
     alertMessage.classList.remove('none');
     alertMessage.innerHTML = `Hatalı Şifre  ${getUsername}`
   }
+  let checkAdmin = localStorage.getItem('userAdmin', username);  //admin user
+  let checkPass = localStorage.getItem('passAdmin', password);
+  if (checkAdmin === userInput.value && checkPass === passwordInput.value) {
+    localStorage.setItem("adminLogged", true);
+    console.log("Hoşgeldin adminim");
+  } else {
+    console.log("bir şeyler yanlış");
+  }
 }
-
 
 let getUsername = (localStorage.getItem("userAdmin", username));
 let getPassword = (localStorage.getItem("passAdmin", password));
 
-console.log("------------------------")
-console.log(getPassword, getUsername)
+console.log("------------------------");
+console.log(getPassword, getUsername);
 
-
-
-
-
-
-
-
-
+document.getElementById('direct-main').addEventListener('click',()=>{
+  window.location.href = "./index.html";
+})
 
 
 

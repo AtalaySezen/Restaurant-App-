@@ -17,3 +17,18 @@ body {
 .hero{
     margin-top: 5rem;
 }
+.hide{
+    visibility: hidden;
+}
+.container{
+    position: relative;
+}
+.btn-danger{
+    position: absolute;
+    right: 1rem;
+}
+@media(max-width:900px){
+    .container{
+        display: flex;
+    }
+}
