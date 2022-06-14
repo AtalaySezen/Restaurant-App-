@@ -636,9 +636,13 @@ i:hover {
 .info-brand {
     font-size: 25px;
     color: white;
-    margin: 0 8rem;
+    margin: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-
 .social-icons {
     padding-top: 1rem;
 }

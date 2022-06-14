@@ -108,6 +108,7 @@ button{
 .login{
     border: 2px solid black;
     color: black;
+    margin-top: 1rem;
 }
 button:focus{
     transform: scale(0.98);
@@ -116,6 +117,29 @@ label{
     color: white;
     font-size: 22px;
     color: white;
+    margin-bottom: 0 !important;
+}
+.fa-lightbulb{
+    display: block;
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+    font-size: 25px;
+}
+
+.night-span{
+    font-size: 8px;
+}
+.none{
+    display: none;
+}
+.alert{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    width: 400px;
+    margin: 14px auto;
+    text-align: center;
 }
 @media(max-width:900px) {
   
