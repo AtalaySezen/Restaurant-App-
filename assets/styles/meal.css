@@ -15,7 +15,6 @@ body {
     margin-bottom: 2rem;
 
 }
-
 .meal-header::first-letter {
     text-transform: capitalize;
 }
