@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-
-=======
-<p>
-</p>
->>>>>>> cd9a1797399992442b196fceec0ee3dc930f0fde
-
 
 <h1>Hello, This is my Restaurant App Project</h1>
 <a href="https://gentle-valkyrie-61f72d.netlify.app/">Link for Project</a>
