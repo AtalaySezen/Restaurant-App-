@@ -31,7 +31,7 @@ function findMeal(e) {
                     </div>
                     `
                         )
-                        .join(''); //belki kaldırırız bir bakalım
+                        .join(''); //
                 }
             });
         search.value = ""

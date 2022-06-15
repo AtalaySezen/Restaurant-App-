@@ -28,5 +28,5 @@ marker.bindPopup("<b>En yakın zamanda görüşmek üzere<b>").openPopup();
 
 var popup = L.popup()
     .setLatLng([41.08707688014269, 29.037257760639466])
-    .setContent("Test")
+    .setContent("İstanbul,Türkiye")
     .openOn(map);
