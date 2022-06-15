@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 
+=======
+<p>
+</p>
+>>>>>>> cd9a1797399992442b196fceec0ee3dc930f0fde
 
 
 <h1>Hello, This is my Restaurant App Project</h1>
