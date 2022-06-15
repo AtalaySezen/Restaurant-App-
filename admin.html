@@ -20,15 +20,27 @@
             <div class="hero text-center">
                 <h1 class="font-size-11 text-center text-black" id="header-search">Rezervasyon Yapan Müşterilerimiz:
                 </h1>
-                <input type="text" id="search-input" placeholder="Müşteri arama" class="form-control">
+                <input type="text" id="search-input" placeholder="Müşteri arama" onkeydown="searchFetch()" class="form-control">
                 <button type="button" class="btn btn-success mt-1" id="search-btn">Arama Yap</button>
                 <button type="button" class="btn btn-info mt-1" id="refresh-btn">Sayfayı Yenile</button>
             </div>
-            <table id="customer-infos" class="table">
-            </table>
-            <hr>
-            <table id="customer-info2" class="table"></table>
+            <table  class="table">
+                <thead>
 
+                <tr>
+                    <th scope="col">Müşteri</th>
+                    <th scope="col">Telefon Numarası</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Tarih</th>
+                    <th scope="col">Saat</th>
+                    <th scope="col">Tür</th>
+                </tr>
+            </thead>
+            <tbody id="customer-infos">
+
+            </tbody>
+
+            </table>
         </main>
     </section>
     <script src="./assets/scripts/adminpage.js"></script>

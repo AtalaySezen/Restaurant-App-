@@ -5,6 +5,5 @@ function adminUser(username, password) {
 
 const adminOne = new adminUser("Admin", 12345);
 
-
 let storageAdmin = localStorage.setItem("userAdmin", (adminOne.username)); //Admin kullanıcı adı
 let storagePassword = localStorage.setItem("passAdmin", (adminOne.password)); //admin şifre

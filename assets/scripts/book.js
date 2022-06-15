@@ -1,9 +1,3 @@
-//Konsola db.json datalarını yazdırma;
-fetch("./db.json")
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-  })
 
 //Form input değerlerinin hepsinin alınması:
 const InputName = document.getElementById('name-input');

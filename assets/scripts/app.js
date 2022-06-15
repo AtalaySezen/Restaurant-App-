@@ -54,7 +54,6 @@ fetch(randomUser)
   .then(response => response.json())
   .then(data => {
     console.log(data);
-    let randomUser2 = data.results;
     image.src = data.results[0].picture.large;
     pTag.innerHTML = `
       <p>${data.results[0].name.first} ${data.results[0].name.last}</p>
@@ -99,7 +98,6 @@ function checkEmail() {
     popUp.classList.remove('hide-popup');
   }
 }
-
 //Fonksiyonun çalıştıırlması
 subscribeBtn.addEventListener('click', checkEmail);
 

@@ -3,14 +3,7 @@ const loginBtn = document.getElementById('login-btn');
 const userInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
 
-
 loginBtn.addEventListener('click', login)
-
-//Admin user ve pass bilgileri
-
-//Gerekir ise buradan yeni admin generate edebiliriz. 
-
-
 
 const alertMessage = document.getElementById('alert-message'); //Danger
 const alertSuccess = document.getElementById('alert-success');
@@ -34,7 +27,7 @@ function login(e) {
   let checkPass = localStorage.getItem('passAdmin', password);
   if (checkAdmin === userInput.value && checkPass === passwordInput.value) {
     localStorage.setItem("adminLogged", true);
-    console.log("Hoşgeldin adminim");
+    console.log("Hoşgeldin ");
   } else {
     console.log("bir şeyler yanlış");
   }
@@ -43,10 +36,8 @@ function login(e) {
 let getUsername = (localStorage.getItem("userAdmin", username));
 let getPassword = (localStorage.getItem("passAdmin", password));
 
-console.log("------------------------");
-console.log(getPassword, getUsername);
 
-document.getElementById('direct-main').addEventListener('click',()=>{
+document.getElementById('direct-main').addEventListener('click', () => {
   window.location.href = "./index.html";
 })
 
@@ -59,11 +50,9 @@ const check = document.getElementById("check");
 
 check.addEventListener('click', getDark);
 
-
 localCheck()
 
 //Renkler buraya kayıt oluyor yeni bir ekleme yapılacağı zaman
-
 function localCheck() {
   if (localStorage.getItem('darkMode') === "true") {
     // document.getElementsByTagName("input")[0].style.borderColor = "#FFF";

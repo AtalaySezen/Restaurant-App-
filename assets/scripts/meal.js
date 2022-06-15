@@ -31,7 +31,7 @@ function findMeal(e) {
                     </div>
                     `
                         )
-                        .join(''); //
+                        .join(''); 
                 }
             });
         hideFooter();
