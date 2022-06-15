@@ -49,6 +49,7 @@ label {
     font-size: 16px;
     font-weight: 550;
     text-align: center;
+    margin-right: 10px;
 }
 
 input {
@@ -87,6 +88,7 @@ input {
     background-color: #DCCA88;
     color: black;
     border: 1px solid white;
+    margin-right: 10px;
 }
 
 .footer-first {
@@ -96,7 +98,9 @@ input {
     align-items: center;
     text-align: center;
 }
-
+.opt-black{
+    color: black !important;
+}
 .social-icons {
     padding-bottom: 1rem;
 }
@@ -105,4 +109,5 @@ input {
     .header-form {
         font-size: 24px;
     }
+  
 }

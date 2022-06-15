@@ -883,6 +883,22 @@ i:hover {
     .restaurant-top {
         margin-top: 5rem;
     }
+    header{
+        height: 70px;
+    }
+    .small-arrow{
+        font-size: 25px !important;
+        color: black !important;
+        display: inline-block !important;
+        position: fixed !important;
+        right: 1rem !important;
+        bottom: 4rem;
+        background-color: beige;
+        width: 30px !important;
+        height: 30px !important;
+        opacity: 0.4;
+        z-index: 99;
+    }
 
 }
 

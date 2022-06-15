@@ -120,14 +120,15 @@ function scrollFunction() {
   } else {
     backTop.style.display = "none";
   } if (window.innerWidth < 900) {
-    backTop.style.display = "none";
+    backTop.classList.add('small-arrow');
   }
 }
 backTop.addEventListener('click', topFunction);
 
 function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
-console.log(window.innerWidth); 
+console.log(window.innerWidth);
+

@@ -34,9 +34,16 @@ function findMeal(e) {
                         .join(''); //
                 }
             });
+        hideFooter();
         search.value = ""
     } else {
         searchResults.innerHTML = `<h1 class="meal-header">Lütfen bu alanı boş bırakmayın.</h1>`
 
+    }
+}
+
+function hideFooter() {
+    if (window.innerWidth < 900) {
+        document.getElementById('footer-area').style.display = "none";
     }
 }
